@@ -17,7 +17,7 @@ const AddProduct = () => {
              Wight: data.Wight,
              imageURL: imageURL
          }
-         const url = 'http://localhost:4000/addProduct';
+         const url = 'https://boiling-cliffs-32707.herokuapp.com/addProduct';
          console.log(productData)
 
          fetch(url,{

@@ -5,19 +5,19 @@ const ManageProduct = () => {
     const [product, setProduct] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:4000/products')
+        fetch('https://boiling-cliffs-32707.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProduct(data))
 
     }, [])
 const removeProduct =()=>{
-    fetch('http://localhost:4000/products')
+    fetch('https://boiling-cliffs-32707.herokuapp.com/products')
     .then(res => res.json())
     .then(data => setProduct(data))
 }
 const deleteProduct=(id)=>{
     
-    fetch(`http://localhost:4000/Delete/${id}`,{
+    fetch(`https://boiling-cliffs-32707.herokuapp.com/Delete/${id}`,{
         method:'DELETE'
     })
        .then(res=>res.json())

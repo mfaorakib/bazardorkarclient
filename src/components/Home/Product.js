@@ -19,7 +19,7 @@ const Product = (props) => {
         <Card.Body>
           <Card.Title style={{fontWeight: 'bold'}}>{Name} <lebel>-{Wight}</lebel> </Card.Title>
           <Card.Text style= {{fontWeight: 'bold',color:'#46A049'}}>
-            <lebel>${Price}</lebel>
+            <label>${Price}</label>
             <Button onClick= {()=>handleAddCart(_id)} style={{color:'white', backgroundColor:'#46A049',marginLeft:'20px'}}  variant="primary"> Buy Now</Button>
           </Card.Text>
 

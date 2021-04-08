@@ -12,13 +12,13 @@ const CheckOut = () => {
     const { Name, Price, Wight } = productId;
     const date = new Date()
     useEffect(() => {
-        fetch(`http://localhost:4000/buyProduct/${id}`)
+        fetch(`https://boiling-cliffs-32707.herokuapp.com/buyProduct/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setProductId(data)
             });
     }, [id]);
-    const url = 'http://localhost:4000/orderInfo';
+    const url = 'https://boiling-cliffs-32707.herokuapp.com/orderInfo';
     const handleCheckOut = () => {
         const orderInfo = {
             Name, Price, Wight, email, date
