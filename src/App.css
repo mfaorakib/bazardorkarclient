@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+.Spinner{
+  height: 80vh;
+  margin: 0 auto;
+  display:flex;
+  align-items:center;
+}
